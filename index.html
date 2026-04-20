@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comet Runner</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="backdrop" aria-hidden="true">
+    <span class="glow glow-a"></span>
+    <span class="glow glow-b"></span>
+    <span class="glow glow-c"></span>
+  </div>
+
+  <main class="game-shell">
+    <header class="top-bar">
+      <h1>Comet Runner</h1>
+      <div class="hud">
+        <div class="hud-card">
+          <span>Score</span>
+          <strong id="score">0</strong>
+        </div>
+        <div class="hud-card">
+          <span>Lives</span>
+          <strong id="lives">3</strong>
+        </div>
+        <div class="hud-card">
+          <span>Level</span>
+          <strong id="level">1</strong>
+        </div>
+        <div class="hud-card">
+          <span>Best</span>
+          <strong id="highScore">0</strong>
+        </div>
+      </div>
+    </header>
+
+    <section class="board-wrap">
+      <canvas id="gameCanvas" width="960" height="540" role="img" aria-label="Comet Runner game board"></canvas>
+
+      <div class="overlay" id="startOverlay">
+        <h2>Ready To Launch?</h2>
+        <p>Move left and right, dodge drones, and grab bright comets for bonus points.</p>
+        <button id="startButton" type="button">Start Game</button>
+      </div>
+
+      <div class="overlay hidden" id="gameOverOverlay">
+        <h2>Mission Failed</h2>
+        <p id="finalScore">Score: 0</p>
+        <p id="finalHighScore">High Score: 0</p>
+        <button id="restartButton" type="button">Play Again</button>
+      </div>
+    </section>
+
+    <footer class="bottom-bar">
+      <p>Controls: <kbd>A</kbd>/<kbd>D</kbd> or <kbd>Arrow</kbd> keys to move, <kbd>Space</kbd> to boost.</p>
+      <div class="touch-controls" aria-label="Touch controls">
+        <button class="touch-btn" id="leftBtn" type="button">Left</button>
+        <button class="touch-btn" id="boostBtn" type="button">Boost</button>
+        <button class="touch-btn" id="rightBtn" type="button">Right</button>
+      </div>
+    </footer>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
