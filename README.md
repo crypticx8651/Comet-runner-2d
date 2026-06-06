@@ -22,6 +22,9 @@ index.html → Game UI
 style.css → Styling  
 script.js → Game logic  
 
+## 🎮 Play Live
+https://cyveron5214.github.io/Comet-runner-2d
+
 ## 🚀 Status
 Playable locally — open `index.html` in your browser.
 
