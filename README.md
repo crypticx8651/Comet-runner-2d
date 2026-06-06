@@ -26,4 +26,4 @@ script.js → Game logic
 Playable locally — open `index.html` in your browser.
 
 ## 👨‍💻 Author
-crypticx8651/Joel
+cyveron5214/ formerly-crypticx8651
